@@ -8,6 +8,7 @@ import Credentials from './components/Credentials';
 import About from './components/About';
 import Footer from './components/Footer';
 import Navbar from './components/NavBar';
+import CustomCursor from './components/CustomCursor';
 
 export default function PortfolioApp() {
   const { scrollYProgress } = useScroll();
@@ -15,6 +16,7 @@ export default function PortfolioApp() {
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-[#ededed] font-inter selection:bg-cyan-500/30">
+      <CustomCursor />
       {/* Global Scroll Progress Indicator */}
       <motion.div 
         className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 origin-left z-50"

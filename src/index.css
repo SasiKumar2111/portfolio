@@ -5,3 +5,6 @@ body {
   color: #ededed;
 }
 
+* {
+  cursor: none !important;
+}
